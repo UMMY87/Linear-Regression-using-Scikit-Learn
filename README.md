@@ -1,1 +1,8 @@
 # Linear-Regression-using-Scikit-Learn
+This code snippet demonstrates the use of Stochastic Gradient Descent (SGD) regression in solving a housing price prediction problem. Initially, the dataset containing features like size, number of bedrooms, floors, and age of houses, along with their corresponding prices, is loaded. Standardization is performed on the input features using `StandardScaler` to ensure consistent scaling across all features. The peak-to-peak range of the raw and normalized features is compared, showing the effectiveness of standardization in bringing features to a similar scale.
+
+SGD regression is then applied to the normalized feature set to train the model. The model's parameters, including weights (`w_norm`) and the intercept (`b_norm`), are extracted after training. Additionally, the number of iterations completed during training and the number of weight updates are printed. A comparison is made between the model parameters obtained from SGD regression and those from a previous lab, confirming the consistency of the results.
+
+Predictions are made using both the `predict` method of `SGDRegressor` and manually using the learned parameters. The equality of predictions from both methods is checked, ensuring the consistency of results. Finally, the predictions made by the model and the actual target values are plotted against the original features, providing a visual representation of the model's performance in predicting housing prices.
+## Plot of target versus prediction using z-score normalized model
+![Plot of target versus prediction using z-score normalized model](https://github.com/UMMY87/Linear-Regression-using-Scikit-Learn/assets/117314436/682101da-3809-4124-bb50-e2d90bd2db8e)
